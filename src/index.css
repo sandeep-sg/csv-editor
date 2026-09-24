@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Dark mode variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Default theme colors (blue) */
+@theme {
+  --color-theme-50: #eff6ff;
+  --color-theme-100: #dbeafe;
+  --color-theme-200: #bfdbfe;
+  --color-theme-300: #93c5fd;
+  --color-theme-400: #60a5fa;
+  --color-theme-500: #3b82f6;
+  --color-theme-600: #2563eb;
+  --color-theme-700: #1d4ed8;
+  --color-theme-800: #1e40af;
+  --color-theme-900: #1e3a8a;
+}
+
+/* Theme presets using CSS variables */
+html[data-theme="violet"] {
+  --color-theme-50: #f5f3ff;
+  --color-theme-100: #ede9fe;
+  --color-theme-200: #ddd6fe;
+  --color-theme-300: #c4b5fd;
+  --color-theme-400: #a78bfa;
+  --color-theme-500: #8b5cf6;
+  --color-theme-600: #7c3aed;
+  --color-theme-700: #6d28d9;
+  --color-theme-800: #5b21b6;
+  --color-theme-900: #4c1d95;
+}
+
+html[data-theme="emerald"] {
+  --color-theme-50: #ecfdf5;
+  --color-theme-100: #d1fae5;
+  --color-theme-200: #a7f3d0;
+  --color-theme-300: #6ee7b7;
+  --color-theme-400: #34d399;
+  --color-theme-500: #10b981;
+  --color-theme-600: #059669;
+  --color-theme-700: #047857;
+  --color-theme-800: #065f46;
+  --color-theme-900: #064e3b;
+}
+
+html[data-theme="rose"] {
+  --color-theme-50: #fff1f2;
+  --color-theme-100: #ffe4e6;
+  --color-theme-200: #fecdd3;
+  --color-theme-300: #fda4af;
+  --color-theme-400: #fb7185;
+  --color-theme-500: #f43f5e;
+  --color-theme-600: #e11d48;
+  --color-theme-700: #be123c;
+  --color-theme-800: #9f1239;
+  --color-theme-900: #881337;
+}
+
+html[data-theme="amber"] {
+  --color-theme-50: #fffbeb;
+  --color-theme-100: #fef3c7;
+  --color-theme-200: #fde68a;
+  --color-theme-300: #fcd34d;
+  --color-theme-400: #fbbf24;
+  --color-theme-500: #f59e0b;
+  --color-theme-600: #d97706;
+  --color-theme-700: #b45309;
+  --color-theme-800: #92400e;
+  --color-theme-900: #78350f;
+}
+
+button {
+  cursor: pointer;
+}
